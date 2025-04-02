@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pokédex</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-button">Toggle Theme</button>
+
+    <h1>My Pokédex (First 50)</h1>
+
+    <div class="pokedex-container">
+        <div class="pokemon-list-container">
+            <h2>Pokémon List</h2>
+            <ul id="pokemon-list">
+                <!-- Pokémon names will be loaded here by JS -->
+                <li>Loading...</li>
+            </ul>
+        </div>
+        <div class="pokemon-display-container">
+            <div id="pokemon-display" class="pokemon-card">
+                <h2 id="pokemon-name">Select a Pokémon</h2>
+                <div class="image-container">
+                    <img id="pokemon-image" src="" alt="Pokémon Image" style="display: none;">
+                    <div id="loading-spinner" class="spinner" style="display: none;"></div>
+                </div>
+                <p id="pokemon-id"></p>
+                <div id="pokemon-types"></div>
+                <h3>Stats:</h3>
+                <ul id="pokemon-stats">
+                    <!-- Stats will be loaded here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Constructed by anubispiss
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
